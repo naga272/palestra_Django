@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+
+            cod. fiscale: {{ persona.cod_fiscale }}<br>
+            nome: {{ persona.nome }}<br>
+            cognome: {{ persona.cognome }}<br>
+            eta: {{ persona.eta }}<br>
+            email: {{ persona.email }}<br>
+
+            <input type="submit" value="lmao">
+        </form>
+    </body>
+</html>

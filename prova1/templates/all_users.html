@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>cod. fiscale</th>
+                <th>nome</th>
+                <th>cognome</th>
+                <th>eta</th>
+                <th>email</th>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.cod_fiscale }}</td>
+                    <td>{{ user.nome }}</td>
+                    <td>{{ user.cognome }}</td>
+                    <td>{{ user.eta }}</td>
+                    <td>{{ user.email }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

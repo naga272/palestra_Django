@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style></style>
+    </head>
+    <body>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <form action="#">
+
+                <label for="lang">tipo utente</label>
+
+                {{ form.as_p }}
+
+                <input type="submit" value="Submit" />
+          </form>
+
+        </form>
+    </body>
+</html>
